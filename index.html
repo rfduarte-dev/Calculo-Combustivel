@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/4ac261affb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Alcool ou Gasolina</title>
+  </head>
+  <body>
+    <main>
+      <h1><i class="fa-solid fa-car"></i>Alcool ou Gasolina</h1>
+      <hr />
+      <p class="sub-text">Calcule qual combustivel é mais econômico</p>
+      <div class="box-alcool">
+        <h2><i class="fa-solid fa-gas-pump icon-title-box"></i>Alcool</h2>
+        <form class="form" action="" method="get">
+          <label for="GET-name" placeholder="Valor Alcool"></label>
+          <input
+            id="vlr-alcool"
+            class="imput"
+            type="text"
+            name="name"
+            placeholder="Valor Alcool"
+          />
+          <input
+            id="consu-alcool"
+            class="imput"
+            type="text"
+            name="name"
+            placeholder="Consumo por Litro"
+          />
+        </form>
+      </div>
+      <div class="box-gas">
+        <h2><i class="fa-solid fa-gas-pump icon-title-box"></i>Gasolina</h2>
+        <form class="form" action="" method="get">
+          <label for="GET-name" placeholder="Valor Alcool"></label>
+          <input
+            id="vlr-gasolina"
+            class="imput"
+            type="text"
+            name="name"
+            placeholder="Valor Gasolina"
+          />
+          <input
+            id="consu-gasolina"
+            class="imput"
+            type="text"
+            name="name"
+            placeholder="Consumo por Litro"
+          />
+        </form>
+      </div>
+      <button class="btn" onclick="calculoCombustivel()">
+        <i class="fa-solid fa-calculator"></i> CALCULAR
+      </button>
+      <div class="result-alcool">
+        <h3 class="result-title">Alcool é a melhor escolha</h3>
+        <p class="result-text">
+          O alcool é <span id="discount-gas">15</span>% mais barato do que a
+          gasolina.
+        </p>
+      </div>
+      <div class="result-gasolina">
+        <h3 class="result-title">Gasolina é a melhor escolha</h3>
+        <p class="result-text">
+          A gasolina é <span id="discount-alcool">15</span>% mais barato do que
+          o alcool.
+        </p>
+      </div>
+      <div class="no-result">
+        <h3 class="result-title">Fazer a melhor escolha é essencial!</h3>
+        <p class="result-text">
+          Calcule a melhor escolha para que a economia ao final do mes seja
+          expressiva.
+        </p>
+      </div>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>
